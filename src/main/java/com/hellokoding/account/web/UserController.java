@@ -465,4 +465,10 @@ public class UserController {
         response.flushBuffer();
         // return "orderdetail";
     }
+
+    @RequestMapping(value = {"/orderdetailemail"}, method = RequestMethod.POST)
+    public void orderdetailemail(@RequestParam("id") long id, @RequestParam() String ordernumber,
+                                    RedirectAttributes redirectAttributes, Model model, HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+    }
 }
