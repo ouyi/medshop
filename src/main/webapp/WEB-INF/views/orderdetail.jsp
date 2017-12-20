@@ -90,7 +90,6 @@
                     $.ajax({
                         type: 'post',
                         url: "${contextPath}/orderdetailsendmail",
-                        dataType : 'json',
                         data: {
                             id: "${order.id}",
                             ordernumber: "${order.orderNumber}"

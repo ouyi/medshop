@@ -467,9 +467,8 @@ public class UserController {
         // return "orderdetail";
     }
 
-    @RequestMapping(value = {"/orderdetailsendmail"}, method = RequestMethod.POST, produces = "application/json")
-    public @ResponseBody Response orderdetailsendmail(@RequestParam("id") long id, @RequestParam() String ordernumber,
-                                               RedirectAttributes redirectAttributes, Model model, HttpServletRequest request, HttpServletResponse response) throws Exception {
+    @RequestMapping(value = {"/orderdetailsendmail"}, method = RequestMethod.POST)
+    public @ResponseBody Response orderdetailsendmail(@RequestParam("id") long id, @RequestParam() String ordernumber) throws Exception {
 
         File tempFile = null;
         OutputStream outputStream = null;
